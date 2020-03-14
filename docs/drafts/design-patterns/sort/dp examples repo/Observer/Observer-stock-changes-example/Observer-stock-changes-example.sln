@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer-stock-changes-example", "Observer-stock-changes-example\Observer-stock-changes-example.csproj", "{3C8DDA69-5580-44D8-BA11-A344BAD10887}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C8DDA69-5580-44D8-BA11-A344BAD10887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C8DDA69-5580-44D8-BA11-A344BAD10887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C8DDA69-5580-44D8-BA11-A344BAD10887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C8DDA69-5580-44D8-BA11-A344BAD10887}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C061E175-E80D-4CE2-9D45-C3CB8B1BA952}
+	EndGlobalSection
+EndGlobal

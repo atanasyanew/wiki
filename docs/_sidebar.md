@@ -1,0 +1,46 @@
+<!-- Side bar navigation -->
+
+- [Home](home.md)
+
+- [Data structures and Algorithms](data-structures-and-algorithms/README.md)
+  - [Algorithms](data-structures-and-algorithms/algorithms/)
+    - [Sorting algorithms](data-structures-and-algorithms/algorithms/algorithms-sorting.md)
+    - [Searching algorithms](data-structures-and-algorithms/algorithms/algorithms-searching.md)
+    - [Consensus algorithms **(WIP)**](data-structures-and-algorithms/algorithms/algorithms-consensus.md)
+    - [Other algorithms **(WIP)**](data-structures-and-algorithms/algorithms/algorithms-other.md)
+  - [Data structures **(WIP)**](data-structures-and-algorithms/data-structures/)
+
+- [DIY](do-it-yourself/README.md)
+  - [Creality ender enclosure](do-it-yourself/2020-03-creality-ender-enclosure/)
+  - [Aquarium electronics cabinet](do-it-yourself/2019-09-aquarium-electronics-cabinet/)
+  - [Home server panel](do-it-yourself/2019-09-home-server-panel/)
+  - [Weather stations](do-it-yourself/2019-06-weather-station/)
+  - [Portable workbench](do-it-yourself/2019-05-portable-workbench/)
+  - [Lab bench power supply](do-it-yourself/2018-07-lab-bench-power-supply/)
+
+- [Raspberry Pi](raspberry-pi/)
+  - [Home server using RPI](raspberry-pi/2020-02-rpi-home-server/)
+  - [Raspberry Pi Gameboy PiGRRL **(WIP)**](raspberry-pi/2020-03-rpi-gameboy-pigrrl/)
+
+- [Others](others/README.md)
+  - [PhD Proof of work](others/phd-proof-of-work/phd-proof-of-work.md)
+  - [Typography](others/typography/)
+
+---
+
+- [**Drafts, WIP**](drafts/)
+  - [Apache kafka](drafts/apache-kafka/)
+  - [Creating a nuget package](drafts/creating-a-nuget-package/)
+  - [C# 101](drafts/csharp-notes/)
+  - [Design patterns](drafts/design-patterns/)
+  - [Dijkstra's algorithm](drafts/dijkstras-algorithm/)
+  - [Docker 101](drafts/docker/)
+  - [Git 101](drafts/git-notes/)
+  - [Linked list](drafts/linked-lists/)
+  - [N-layer architecture app](drafts/n-tier-architecture/)
+  - [Object oriented programming 101](drafts/object-oriented-programming-notes/)
+  - [Example of server-side pagination](drafts/server-side-pagination-example/)
+  - [Trees](drafts/trees/)
+  - [Sine waves in elements](drafts/sine-waves-in-elements/)
+  - [Phase shift](drafts/phase-shift/)
+  - [Sinusoidal modes in linear circuits](drafts/sinusoidal-modes-in-linear-circuits/)

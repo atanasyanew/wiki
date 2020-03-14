@@ -1,0 +1,11 @@
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\obj\Debug\netcoreapp2.1\Observer-stock-changes-example.csprojAssemblyReference.cache
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\obj\Debug\netcoreapp2.1\Observer-stock-changes-example.csproj.CoreCompileInputs.cache
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\obj\Debug\netcoreapp2.1\Observer-stock-changes-example.AssemblyInfoInputs.cache
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\obj\Debug\netcoreapp2.1\Observer-stock-changes-example.AssemblyInfo.cs
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\bin\Debug\netcoreapp2.1\Observer-stock-changes-example.deps.json
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\bin\Debug\netcoreapp2.1\Observer-stock-changes-example.runtimeconfig.json
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\bin\Debug\netcoreapp2.1\Observer-stock-changes-example.runtimeconfig.dev.json
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\bin\Debug\netcoreapp2.1\Observer-stock-changes-example.dll
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\bin\Debug\netcoreapp2.1\Observer-stock-changes-example.pdb
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\obj\Debug\netcoreapp2.1\Observer-stock-changes-example.dll
+C:\Users\atanasyanev\source\repos\Observer-stock-changes-example\Observer-stock-changes-example\obj\Debug\netcoreapp2.1\Observer-stock-changes-example.pdb
