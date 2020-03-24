@@ -19,6 +19,15 @@ Files and parts:
 - [Enviro+ hat for Raspberry Pi – Enviro + Air Quality](https://shop.pimoroni.com/products/enviro?variant=31155658457171)
 - Raspberry Pi Zero W with microSD card
 
+Run the application on start-up (examples from the pimoroni's guide)
+
+```bash
+sudo contab -e
+# Add the following in order to execute the script on start-up
+@reboot python /home/pi/enviroplus-python/examples/all-in-one.py &
+
+```
+
 ## Show case
 
 |![IMG_20200322_132942.jpg](./assets/IMG_20200322_132942.jpg)|![IMG_20200322_132947.jpg](./assets/IMG_20200322_132947.jpg)|
@@ -30,6 +39,7 @@ Files and parts:
 
 - [Getting Started with Enviro+](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-enviro-plus)
 - [Grafana Pimoroni Enviroplus Dashboard](https://grafana.com/grafana/dashboards/11605)
+- [How to run a script at start-up on a Raspberry Pi using crontab](https://www.raspberrypi.org/blog/how-to-run-a-script-at-start-up-on-a-raspberry-pi-using-crontab/)
 
 ## TODOs
 

@@ -64,3 +64,4 @@ Notes for creating my 3D printer enclosure
 - [Ender 3 / Ender 3 Pro - Underside PSU Mount](https://www.thingiverse.com/thing:3349588)
 - [Cable guide/hole for IKEA LACK table (with cap)](https://www.thingiverse.com/thing:2573459)
 - [IKEA LACK Enclosure Fan](https://www.thingiverse.com/thing:4163931)
+- [Ikea Lack Grommet](https://www.thingiverse.com/thing:2225786)
