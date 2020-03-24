@@ -10,6 +10,7 @@ Using raspberry pi for home server
   - [Configure DHCP](#configure-dhcp)
   - [Tools](#tools)
   - [PiVPN](#pivpn)
+  - [Duck DNS](#duck-dns)
   - [Docker](#docker)
   - [Backups](#backups)
   - [Log2Ram](#log2ram)
@@ -44,14 +45,14 @@ At the end of the day
 - [x] Pi-hole [^Pi-hole]
 - [x] Portainer [^Portainer]
 - [x] InfluxDb [^InfluxDB]
+- [x] Backups
+- [x] Duck DNS
 - [ ] Samba NAS [^Samba]
   
 TODO:
 
-- [ ] backups
 - [ ] nodered projects test ?
 - [ ] samba
-- [ ] duck dns
 
 ## Enable SSH and VNC
 
@@ -135,6 +136,12 @@ pivpn revoke nameOfTheClient
 
 Check [Duck DNS](https://www.duckdns.org/), if no static IP address.
 
+## Duck DNS
+
+1. Create account on [Duck DNS](https://www.duckdns.org/)
+2. Create domain name.
+3. Go to install section, choose OS and the created domain, follow the steps.
+
 ## Docker
 
 The [IOTstack](https://github.com/gcgarner/IOTstack) provides easy way of installing docker as well as creating a compose file for our services and a lot more.
@@ -174,12 +181,25 @@ docker-compose pull
 
 Uploading docker containers valuable data to cloud (dropbox).
 
-```shell
-./menu.sh
-# Navigate to Backup options and follow to the steps
-```
+1. [Get Your Dropbox API Access Token](https://www.dropbox.com/developers/apps/create)
+2. Install Dropbox-Uploader from the script
 
-To do: [project wiki - Backups](https://github.com/gcgarner/IOTstack/wiki/Backups)
+    ```shell
+    ./menu.sh
+    # Navigate to Backup options and follow to the steps (DropBox)
+    # Dropbox-Uploader will be installed while asking some configuration settings
+    ```
+
+3. Schedule backup execution.
+   The script ``~/IOTstack/scripts/docker_backup.sh`` creates the backup for us.
+   ``~/Dropbox-Uploader/dropbox_uploader.sh`` called from above, upload the files.
+   Use cron to schedule script execution:
+
+   ```shell
+    crontab -e
+    # Every day at 03:00am.
+    0 03 * * * ~/IOTstack/scripts/docker_backup.sh >/dev/null 2>&1
+   ```
 
 ## Log2Ram
 
