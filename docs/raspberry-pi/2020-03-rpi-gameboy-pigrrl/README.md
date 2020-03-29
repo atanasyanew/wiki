@@ -4,9 +4,11 @@
 - [Raspberry Pi Gameboy PiGRRL](#raspberry-pi-gameboy-pigrrl)
   - [Description](#description)
   - [Show case](#show-case)
-  - [TODOs](#todos)
 
 ## Description
+
+My build of PiGRRL 2.
+More details - [learn.adafruit.com/pigrrl-2](https://learn.adafruit.com/pigrrl-2)
 
 ## Show case
 
@@ -17,12 +19,3 @@
 | ![IMG_20200313_192846.jpg](./assets/IMG_20200313_192846.jpg) | ![IMG_20200313_192849.jpg](./assets/IMG_20200313_192849.jpg) | ![IMG_20200313_225614.jpg](./assets/IMG_20200313_225614.jpg) | ![IMG_20200313_225620.jpg](./assets/IMG_20200313_225620.jpg) |
 | ![IMG_20200313_225624.jpg](./assets/IMG_20200313_225624.jpg) | ![IMG_20200313_225632.jpg](./assets/IMG_20200313_225632.jpg) | ![IMG_20200313_225639.jpg](./assets/IMG_20200313_225639.jpg) | ![IMG_20200313_225642.jpg](./assets/IMG_20200313_225642.jpg) |
 | ![IMG_20200313_225652.jpg](./assets/IMG_20200313_225652.jpg) | ![IMG_20200313_225654.jpg](./assets/IMG_20200313_225654.jpg) | | |
-
-## TODOs
-
-Should write more details
-
-- models
-- parts
-- assembly
-- software

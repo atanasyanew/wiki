@@ -9,8 +9,8 @@ Using raspberry pi for home server
   - [Enable SSH and VNC](#enable-ssh-and-vnc)
   - [Configure DHCP](#configure-dhcp)
   - [Tools](#tools)
-  - [PiVPN](#pivpn)
   - [Duck DNS](#duck-dns)
+  - [PiVPN](#pivpn)
   - [Docker](#docker)
   - [Backups](#backups)
   - [Log2Ram](#log2ram)
@@ -23,36 +23,34 @@ Using raspberry pi for home server
     - [Mosquitto](#mosquitto)
     - [InfluxDb](#influxdb)
     - [Grafana](#grafana)
+    - [Samba NAS](#samba-nas)
   - [Telegraf](#telegraf)
-    - [Samba](#samba)
 
 ## Overview
 
-At the end of the day
+At the end of the day a fully functional raspberry pi home server with the fallowing technologies and services:
 
-- [x] SSH [^SSH]
-- [x] VNC [^VNC]
-- [x] DHCP [^DHCP]
-- [x] htop [^htop]
-- [x] Git [^Git]
-- [x] PiVPN [^PiVPN]
-- [x] Docker [^Docker]
-- [x] Log2Ram [^Log2Ram]
-- [x] Disable Swap [^swap]
-- [x] Plex media server [^Plex]
-- [x] Node-RED [^Node-RED]
-- [x] Mosquitto [^Mosquitto]
-- [x] Pi-hole [^Pi-hole]
-- [x] Portainer [^Portainer]
-- [x] InfluxDb [^InfluxDB]
-- [x] Backups
-- [x] Duck DNS
-- [ ] Samba NAS [^Samba]
-  
-TODO:
-
-- [ ] nodered projects test ?
-- [ ] samba
+- [x] **SSH**
+- [x] **VNC**
+- [x] **DHCP**
+- [x] **htop**
+- [x] **Git**
+- [x] **Duck DNS** - Free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice.
+- [x] **PiVPN**
+- [x] **Docker**
+- [x] **Backups**
+- [x] **Log2Ram** - Logging in RAM rather than on the SD card.
+- [x] **Disable Swap** - By using a swap file, a computer can use more memory than what is physically installed, however pi uses sd card and this this can cause issues.
+- [ ] Containerized services:
+  - [x] **Portainer** - Management UI for Docker.
+  - [x] **Pi-hole** - Network-wide Ad Blocking.
+  - [x] **Plex media server**
+  - [ ] **Node-RED**
+  - [x] **Mosquitto** - Message broker that implements the MQTT protocol.
+  - [x] **InfluxDb** - Time-series database.
+  - [x] **Grafana** - Visualize data using dashboards.
+  - [ ] **Samba NAS** - Samba server as Network Attached Storage in home network.
+- [x] **Telegraf** - Agent collecting data and sending it to InfluxDB.
 
 ## Enable SSH and VNC
 
@@ -116,6 +114,13 @@ sudo apt-get install git
 sudo apt-get install htop
 ```
 
+## Duck DNS
+
+1. Create [Duck DNS](https://www.duckdns.org/) account
+2. Create domain name.
+3. Go to install section, choose OS and the created domain, follow the steps.
+   Summary of the guide: creates folder with ``duck.sh`` script which makes call to duck dns API in order to update the public IP address of the raspberry pi, then a crontab take care to executes the script each 5min
+
 ## PiVPN
 
 ```bash
@@ -135,12 +140,6 @@ pivpn revoke nameOfTheClient
 ```
 
 Check [Duck DNS](https://www.duckdns.org/), if no static IP address.
-
-## Duck DNS
-
-1. Create account on [Duck DNS](https://www.duckdns.org/)
-2. Create domain name.
-3. Go to install section, choose OS and the created domain, follow the steps.
 
 ## Docker
 
@@ -181,6 +180,8 @@ docker-compose pull
 
 Uploading docker containers valuable data to cloud (dropbox).
 
+**Setup backups:**
+
 1. [Get Your Dropbox API Access Token](https://www.dropbox.com/developers/apps/create)
 2. Install Dropbox-Uploader from the script
 
@@ -200,6 +201,12 @@ Uploading docker containers valuable data to cloud (dropbox).
     # Every day at 03:00am.
     0 03 * * * ~/IOTstack/scripts/docker_backup.sh >/dev/null 2>&1
    ```
+
+**Restoring a backup:**
+
+> The "volumes" directory contains all the persistent data necessary to recreate the container. The docker-compose.yml and the environment files are optional as they can be regenerated with the menu. Simply copy the volumes directory into the IOTstack directory, Rebuild the stack and start.
+
+More details - [IOTstack/wiki/Backups](https://github.com/gcgarner/IOTstack/wiki/Backups)
 
 ## Log2Ram
 
@@ -312,51 +319,7 @@ Dashboards I'm using:
 - [Raspberry Pi Monitoring (modified version of the above one)](https://grafana.com/grafana/dashboards/10578)
 - [Home metrics DIY IoT sensor](https://grafana.com/grafana/dashboards/11734)
 
-## Telegraf
-
-It is possible to install the service via IOTStack, but I prefer installing it directly on the Raspberry Pi's OS, since I want to collecting metrics from the RPI and if its installed under docker I should mess with mounting directories and volumes, permissions, writing scripts for querying data, such as CPU and memory usage, temperature etc..
-
-```shell
-# Identify which version of Raspbian you're running. In my case is buster
-cat /etc/os-releases
-
-# Add the repo's GPG key and add the repo itself
-curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
-
-# Add the repository
-echo "deb https://repos.influxdata.com/debian buster stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
-
-sudo apt-get update
-sudo apt-get install telegraf
-
-sudo systemctl start telegraf
-sudo systemctl status telegraf
-```
-
-Telegraf configuration widely depends on your needs. Configurations file location is ``/etc/telegraf/telegraf.conf``
-
-Links for the dashboards in grafana section provides Collector Configuration Details, check them for more information.
-
-The whole configuration file for the mentioned dashboards - [gist.github.com/atanasyanew - telegraf.conf](https://gist.github.com/atanasyanew/5c5db975a7179fc271daea43b6592b5b)
-
-```shell
-# Download the configuration from the GitHub Gist
-curl https://gist.githubusercontent.com/atanasyanew/5c5db975a7179fc271daea43b6592b5b/raw/telegraf.conf -O
-
-# Replace the configuration file with your own
-sudo cp telegraf.conf /etc/telegraf/telegraf.conf
-
-# Fix permissions
-sudo usermod -G video telegraf
-sudo usermod -G docker telegraf
-sudo usermod -aG docker telegraf
-
-# Restart the service
-sudo systemctl restart telegraf
-sudo systemctl status telegraf
-```
-
-### Samba
+### Samba NAS
 
 Samba is not included in the [gcgarner/IOTstack](https://github.com/gcgarner/IOTstack) so we have to add the service manually by editing the ``docker-compose.yml`` using [dperson/samba](https://hub.docker.com/r/dperson/samba) docker image.
 
@@ -412,46 +375,46 @@ References:
 - [static ip - How to set a Raspberry Pi with a static ip address](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)
 - [static ip - piHut, How to give your Raspberry Pi a Static IP Address](https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-give-your-raspberry-pi-a-static-ip-address-update)
 
-<!-- Footnotes -->
-[^SSH]: **SSH (Secure Shell)** is a cryptographic network protocol for operating network services securely over an unsecured network.
+## Telegraf
 
-[^DHCP]: **DHCP (The Dynamic Host Configuration Protocol)** is a network management protocol used on UDP/IP networks whereby a DHCP server dynamically assigns an IP address and other network configuration parameters to each device on a network so they can communicate with other IP networks.
+It is possible to install the service via IOTStack, but I prefer installing it directly on the Raspberry Pi's OS, since I want to collecting metrics from the RPI and if its installed under docker I should mess with mounting directories and volumes, permissions, writing scripts for querying data, such as CPU and memory usage, temperature etc..
 
-[^VNC]: **VNC (Virtual Network Computing)** is a graphical desktop-sharing system that uses the Remote Frame Buffer protocol to remotely control another computer.
+```shell
+# Identify which version of Raspbian you're running. In my case is buster
+cat /etc/os-releases
 
-[^htop]: **htop** is an interactive system-monitor process-viewer and process-manager.
+# Add the repo's GPG key and add the repo itself
+curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 
-[^Git]: **[Git](https://git-scm.com/)** is a distributed version-control system for tracking changes in source code during software development.
+# Add the repository
+echo "deb https://repos.influxdata.com/debian buster stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 
-[^Docker]: **[Docker](https://www.docker.com/)** is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels
+sudo apt-get update
+sudo apt-get install telegraf
 
-[^PiVPN]: **[PiVPN](https://pivpn.dev/)** - Simplest OpenVPN setup and configuration, designed for Raspberry Pi.
-**VPN (Virtual private network)** A virtual private network extends a private network across a public network, and enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network.
+sudo systemctl start telegraf
+sudo systemctl status telegraf
+```
 
-[^Samba]: **Samba** project is one of the most popular ways to turn your Pi into a NAS.
-**NAS (Network-attached storage)** is a file-level computer data storage server connected to a computer network providing data access to a heterogeneous group of clients. NAS is specialized for serving files either by its hardware, software, or configuration
+Telegraf configuration widely depends on your needs. Configurations file location is ``/etc/telegraf/telegraf.conf``
 
-[^Plex]: **[Plex](https://www.plex.tv/)** is a client–server media player system and software suite comprising two main components. The Plex Media Server desktop application runs on Windows, macOS and Linux, including some types of NAS devices.
+Links for the dashboards in grafana section provides Collector Configuration Details, check them for more information.
 
-[^Node-RED]: **[Node-RED](https://nodered.org/)** is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways. It provides a browser-based editor. Node-RED is widely used in IoT.
+The whole configuration file for the mentioned dashboards - [gist.github.com/atanasyanew - telegraf.conf](https://gist.github.com/atanasyanew/5c5db975a7179fc271daea43b6592b5b)
 
-[^Mosquitto]: **[Eclipse Mosquitto](https://mosquitto.org/)** is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol.
-**The MQTT protocol** provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for Internet of Things messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers.
+```shell
+# Download the configuration from the GitHub Gist
+curl https://gist.githubusercontent.com/atanasyanew/5c5db975a7179fc271daea43b6592b5b/raw/telegraf.conf -O
 
-[^Pi-hole]: **[Pi-hole](https://pi-hole.net/)** is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole, intended for use on a private network.
-**DNS (Domain Name System)** DNS is the protocol that provides the framework for web browsing. In other words, DNS is a system of computers that provides the infrastructure that allows us to browse the Internet by making the Internet a more human-friendly place.
+# Replace the configuration file with your own
+sudo cp telegraf.conf /etc/telegraf/telegraf.conf
 
-[^Portainer]: **[Portainer](https://www.portainer.io/)** is a lightweight management UI which allows you to easily manage your Docker stacks, containers, images, volumes, networks and more.
+# Fix permissions
+sudo usermod -G video telegraf
+sudo usermod -G docker telegraf
+sudo usermod -aG docker telegraf
 
-[^Log2Ram]: Log2Ram is a simple Unix shell script that sets up a mount point for logging in RAM rather than on the SD card. The idea is that any application or service sending log entries to /var/log will actually be writing them to virtual log files, which won't rack up any activity on the SD card.
-
-[^swap]: A swap file, sometimes called a page file or paging file, is space on a hard drive used as a temporary location to store information when RAM is fully utilized. By using a swap file, a computer can use more memory than what is physically installed in the computer. However, if the computer is low on drive space, the computer can run slower because of the inability of the swap file to grow.
-
-[^Grafana]: Grafana is a tool to visualize data using dashboard. Is supports, InfluxDB as a data source, amongst many others.
-
-[^InfluxDB]: InfluxDB is a time-series database
-
-[^telegraf]: Telegraf is an agent collecting data and sending it to InfluxDB.
-Telegraf is an agent for collecting, processing, aggregating, and writing metrics. It supports various output plugins such as influxdb, Graphite, Kafka, OpenTSDB etc. Grafana is an open source data visualization and monitoring suite
-
-[^Chronograf]: Chronograf is the complete interface for the InfluxDB 1.x Platform
+# Restart the service
+sudo systemctl restart telegraf
+sudo systemctl status telegraf
+```

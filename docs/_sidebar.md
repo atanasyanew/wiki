@@ -17,6 +17,7 @@
   - [Weather stations](do-it-yourself/2019-06-weather-station/)
   - [Portable workbench](do-it-yourself/2019-05-portable-workbench/)
   - [Lab bench power supply](do-it-yourself/2018-07-lab-bench-power-supply/)
+  - [Fish tank stand **(WIP)**](do-it-yourself/2020-03-fish-tank-stand/)
 
 - [Raspberry Pi](raspberry-pi/)
   - [Home server using RPI](raspberry-pi/2020-02-rpi-home-server/)
