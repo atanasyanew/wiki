@@ -206,6 +206,15 @@ Uploading docker containers valuable data to cloud (dropbox).
 
 > The "volumes" directory contains all the persistent data necessary to recreate the container. The docker-compose.yml and the environment files are optional as they can be regenerated with the menu. Simply copy the volumes directory into the IOTstack directory, Rebuild the stack and start.
 
+In case of SD card failure:
+
+- Create a new SD card with Raspbian OS
+- Add Docker and the stack (follow this guide)
+- Stop the containers
+- Restore the volumes directory from Dropbox
+  In case influxDb does not works we should delete databases and restore the backup as shown in Gramps
+- Restart the containers
+
 More details - [IOTstack/wiki/Backups](https://github.com/gcgarner/IOTstack/wiki/Backups)
 
 ## Log2Ram
@@ -409,7 +418,7 @@ curl https://gist.githubusercontent.com/atanasyanew/5c5db975a7179fc271daea43b659
 # Replace the configuration file with your own
 sudo cp telegraf.conf /etc/telegraf/telegraf.conf
 
-# Fix permissions
+# Permissions
 sudo usermod -G video telegraf
 sudo usermod -G docker telegraf
 sudo usermod -aG docker telegraf
