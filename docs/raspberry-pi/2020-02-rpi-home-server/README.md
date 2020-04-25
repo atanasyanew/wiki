@@ -25,10 +25,11 @@ Using raspberry pi for home server
     - [Grafana](#grafana)
     - [Samba NAS](#samba-nas)
   - [Telegraf](#telegraf)
+  - [References](#references)
 
 ## Overview
 
-At the end of the day a fully functional raspberry pi home server with the fallowing technologies and services:
+At the end of the day - home server using raspberry pi with the fallowing features:
 
 - [x] **SSH**
 - [x] **VNC**
@@ -41,15 +42,15 @@ At the end of the day a fully functional raspberry pi home server with the fallo
 - [x] **Backups**
 - [x] **Log2Ram** - Logging in RAM rather than on the SD card.
 - [x] **Disable Swap** - By using a swap file, a computer can use more memory than what is physically installed, however pi uses sd card and this this can cause issues.
-- [ ] Containerized services:
+- [x] Containerized services:
   - [x] **Portainer** - Management UI for Docker.
   - [x] **Pi-hole** - Network-wide Ad Blocking.
   - [x] **Plex media server**
-  - [ ] **Node-RED**
+  - [x] **Node-RED**
   - [x] **Mosquitto** - Message broker that implements the MQTT protocol.
   - [x] **InfluxDb** - Time-series database.
   - [x] **Grafana** - Visualize data using dashboards.
-  - [ ] **Samba NAS** - Samba server as Network Attached Storage in home network.
+  - [x] **Samba NAS** - Samba server as Network Attached Storage in home network.
 - [x] **Telegraf** - Agent collecting data and sending it to InfluxDB.
 
 ## Enable SSH and VNC
@@ -285,6 +286,8 @@ sudo nano volumes/nodered/data/settings.js
 docker restart nodered
 ```
 
+Check [Node-RED Projects docs](https://nodered.org/docs/user-guide/projects/) in order to link your flows from the remote repository or creating one.
+
 ### Mosquitto
 
 The broker is available at ``192.168.0.xxx:1883``, no password by default.
@@ -330,59 +333,20 @@ Dashboards I'm using:
 
 ### Samba NAS
 
-Samba is not included in the [gcgarner/IOTstack](https://github.com/gcgarner/IOTstack) so we have to add the service manually by editing the ``docker-compose.yml`` using [dperson/samba](https://hub.docker.com/r/dperson/samba) docker image.
+Samba is not included in the [gcgarner/IOTstack](https://github.com/gcgarner/IOTstack) so we have to add the service manually by editing the ``docker-compose.yml``
 
-[Pi 4B NAS running Samba: 80MB/s Read and 110MB/s Write](https://www.reddit.com/r/raspberry_pi/comments/c9xhn1/pi_4b_nas_running_samba_80mbs_read_and_110mbs/)
+Example of samba docker compose provided in my [GitHub Gist](https://gist.github.com/atanasyanew/5e1e5ba1af658aab5cd4f965919559ac):
 
-docker exec -it samba samba.sh
+[docker-compose-samba.yml](//gist.githubusercontent.com/atanasyanew/5e1e5ba1af658aab5cd4f965919559ac/raw/docker-compose-samba.yml ':include :type=code')
 
-```yml
-version: '3.4'
+Volumes to share and configurations in ``command`` sections of the code snipped.
 
-services:
-  samba:
-    image: dperson/samba:armhf
-    container_name: samba
-    environment:
-      TZ: EET
-    networks:
-      - default
-    ports:
-      - "137:137/udp"
-      - "138:138/udp"
-      - "139:139/tcp"
-      - "445:445/tcp"
-    read_only: true
-    tmpfs:
-      - /tmp
-    restart: unless-stopped
-    stdin_open: true
-    tty: true
-    volumes:
-      - /media/pi:/mnt:z
-      # - /mnt2:/mnt2:z
-    command: '-s "usbhub;/mnt;yes;no;yes;" -p' # USB Hub should have access to anyone for anything
-    # command: '-s "usbhub;/mnt" -s "Bobs Volume;/mnt2;yes;no;no;bob" -u "bob;bobspasswd"'
-    #                           -s "<name;/path>[;browse;readonly;guest;users;admins;writelist;comment]"
-
-networks:
-  default:
-```
-
-Adding permissions and volumes to share:
-
----
+Additional can be made from within inside the container ``docker exec -it samba samba.sh``
 
 References:
 
-- [vnc - raspberry pi documentation](https://www.raspberrypi.org/documentation/remote-access/vnc/README.md)
-- [ssh - raspberry pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/)
-- [PiVPN - official page](https://pivpn.dev/)
-- [PiVPN - GitHub](https://github.com/pivpn/pivpn)
-- [PiVPN - medium.com, How to use PiVPN to create your own VPN.](https://medium.com/@jasonrigden/how-to-use-pivpn-b65a3a3f0759)
-- [PiVPN - YouTube, HOW TO SETUP PiVPN ON THE RASPBERRY PI TUTORIAL](https://www.youtube.com/watch?v=9RSHSt4RuLk)
-- [static ip - How to set a Raspberry Pi with a static ip address](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)
-- [static ip - piHut, How to give your Raspberry Pi a Static IP Address](https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-give-your-raspberry-pi-a-static-ip-address-update)
+- [dperson/samba](https://hub.docker.com/r/dperson/samba) docker image.
+- [Pi 4B NAS running Samba: 80MB/s Read and 110MB/s Write](https://www.reddit.com/r/raspberry_pi/comments/c9xhn1/pi_4b_nas_running_samba_80mbs_read_and_110mbs/)
 
 ## Telegraf
 
@@ -427,3 +391,16 @@ sudo usermod -aG docker telegraf
 sudo systemctl restart telegraf
 sudo systemctl status telegraf
 ```
+
+---
+
+## References
+
+- [VNC - raspberry pi documentation](https://www.raspberrypi.org/documentation/remote-access/vnc/README.md)
+- [SSH - raspberry pi documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/)
+- [PiVPN - official page](https://pivpn.dev/)
+- [PiVPN - GitHub](https://github.com/pivpn/pivpn)
+- [PiVPN - medium.com, How to use PiVPN to create your own VPN.](https://medium.com/@jasonrigden/how-to-use-pivpn-b65a3a3f0759)
+- [PiVPN - YouTube, HOW TO SETUP PiVPN ON THE RASPBERRY PI TUTORIAL](https://www.youtube.com/watch?v=9RSHSt4RuLk)
+- [Static IP - How to set a Raspberry Pi with a static ip address](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)
+- [Static IP - piHut, How to give your Raspberry Pi a Static IP Address](https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-give-your-raspberry-pi-a-static-ip-address-update)
