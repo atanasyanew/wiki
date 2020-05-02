@@ -1,6 +1,6 @@
 # Creality Ender 3 enclosure
 
-<!-- Modified: 2020.03.14 -->
+Modified: 2020.05.02
 
 - [Creality Ender 3 enclosure](#creality-ender-3-enclosure)
   - [Description](#description)
@@ -26,6 +26,7 @@ Notes for creating my 3D printer enclosure
 | 7   | Power outlet extender          | 1     | 4 EUR      |                              |
 | 8   | Plexiglass                     | 1     | 5 EUR      |                              |
 | 9   | Screws, etc..                  |       | 2 EUR      |                              |
+| 9   | Used filament?                 |       |            |                              |
 |     |                                |       | **50 EUR** |                              |
 
 ## Parts, 3D printed
@@ -39,8 +40,12 @@ Notes for creating my 3D printer enclosure
 | 5 | ``socket_bracket_v1.stl``              | 2 | [thing:4088168](https://www.thingiverse.com/thing:4088168)       | Outlet holder |
 | 6 | ``Cable_bracket.stl``                  | 2 | [thing:1563959](https://www.thingiverse.com/thing:1563959)       | Cable hold down Bracket |
 | 7 | Outlet plug holder (for side mount)    | 1 |                                                                  |      |
+| 8 | ``120mm-fan-hepa-filter-like.stl``     | 1 | [thing:4331348](https://www.thingiverse.com/thing:4331348)       | Bottom, electronics cooling |
+| 9 | Ikea Lack Grommet                      | 1 | [thing:2225786](https://www.thingiverse.com/thing:2225786/)      | Assembly of two parts |
 
 ## Show case
+
+Summary view
 
 | ![IMG_20200314_155835.jpg](./assets/IMG_20200314_155835.jpg) | ![IMG_20200314_155838.jpg](./assets/IMG_20200314_155838.jpg) | ![IMG_20200314_155851.jpg](./assets/IMG_20200314_155851.jpg) | ![IMG_20200314_155905.jpg](./assets/IMG_20200314_155905.jpg) |
 |:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
@@ -53,15 +58,21 @@ Notes for creating my 3D printer enclosure
 ![IMG_20200308_080314.jpg](./assets/IMG_20200308_080314.jpg)
 -->
 
+Bottom, below view
+
 | ![IMG_20200105_141324.jpg](./assets/IMG_20200105_141324.jpg) | ![IMG_20200105_153500.jpg](./assets/IMG_20200105_153500.jpg) | ![IMG_20200105_153455.jpg](./assets/IMG_20200105_153455.jpg) |
-|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
+|:------------------------------------------------------------:|:------------------------------------------------------------:|:-------------------------------------------------------------:|
+
+Bottom, above view
+
+| ![jpg](./assets/IMG_20200430_165339.jpg) | ![jpg](./assets/IMG_20200430_165348.jpg) | ![jpg](./assets/IMG_20200502_112043.jpg) | ![jpg](./assets/IMG_20200502_112225.jpg) |
+|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
 
 ## TODOs
 
-- [Lack Enclosure Built in Vent and Filter Fan](https://www.thingiverse.com/thing:3272512)
-- [IKEA Lack fan 92x92 duct](https://www.thingiverse.com/thing:3649118)
-- [HEPA + Active Carbon Filter -- remix -- lack table depth](https://www.thingiverse.com/thing:2678578)
-- [Ender 3 / Ender 3 Pro - Underside PSU Mount](https://www.thingiverse.com/thing:3349588)
-- [Cable guide/hole for IKEA LACK table (with cap)](https://www.thingiverse.com/thing:2573459)
-- [IKEA LACK Enclosure Fan](https://www.thingiverse.com/thing:4163931)
-- [Ikea Lack Grommet](https://www.thingiverse.com/thing:2225786)
+- Should design case for the Raspberry Pi OctoPrint and auxiliary circuit (relays etc...)
+- Light up the enclosure with LED strip (controllable with the OctoPrint)
+- Consider moving PSU outside (botton of the enclosure) or update flow of the air (PSU)
+  - [Ender 3 / Ender 3 Pro - Underside PSU Mount](https://www.thingiverse.com/thing:3349588)
+  - [HEPA + Active Carbon Filter -- remix -- lack table depth](https://www.thingiverse.com/thing:2678578)
+- Additional safety features (Smoke and fire alarm)
