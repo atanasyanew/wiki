@@ -27,6 +27,7 @@
 - [Others](others/README.md)
   - [PhD Proof of work](others/phd-proof-of-work/phd-proof-of-work.md)
   - [Typography](others/typography/)
+  - [3D Printer basics](others/2020-05-3d-printer-basics/)
 
 ---
 
