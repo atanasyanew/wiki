@@ -65,14 +65,13 @@ Bottom, below view
 
 Bottom, above view
 
-| ![jpg](./assets/IMG_20200430_165339.jpg) | ![jpg](./assets/IMG_20200430_165348.jpg) | ![jpg](./assets/IMG_20200502_112043.jpg) | ![jpg](./assets/IMG_20200502_112225.jpg) |
-|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|:------------------------------------------------------------:|
+| ![jpg](./assets/IMG_20200430_165339.jpg) | ![jpg](./assets/IMG_20200430_165348.jpg) | ![jpg](./assets/IMG_20200502_112043.jpg) | ![jpg](./assets/IMG_20200502_112225.jpg) | ![jpg](./assets/IMG_20200521_220300.jpg) | ![jpg](./assets/IMG_20200521_220311.jpg) |
+|:----------------------------------------:|:-----------------------------------------|:----------------------------------------:|:----------------------------------------:|:----------------------------------------:|:-----------------------------------------|
 
 ## TODOs
 
 - Should design case for the Raspberry Pi OctoPrint and auxiliary circuit (relays etc...)
 - Light up the enclosure with LED strip (controllable with the OctoPrint)
-- Consider moving PSU outside (botton of the enclosure) or update flow of the air (PSU)
+- Consider moving PSU outside (bottom of the enclosure) or update flow of the air (PSU)
   - [Ender 3 / Ender 3 Pro - Underside PSU Mount](https://www.thingiverse.com/thing:3349588)
-  - [HEPA + Active Carbon Filter -- remix -- lack table depth](https://www.thingiverse.com/thing:2678578)
 - Additional safety features (Smoke and fire alarm)

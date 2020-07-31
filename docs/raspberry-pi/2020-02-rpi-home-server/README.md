@@ -24,6 +24,7 @@ Using raspberry pi for home server
     - [InfluxDb](#influxdb)
     - [Grafana](#grafana)
     - [Samba NAS](#samba-nas)
+    - [MotionEye](#motioneye)
   - [Telegraf](#telegraf)
   - [References](#references)
 
@@ -51,6 +52,7 @@ At the end of the day - home server using raspberry pi with the fallowing featur
   - [x] **InfluxDb** - Time-series database.
   - [x] **Grafana** - Visualize data using dashboards.
   - [x] **Samba NAS** - Samba server as Network Attached Storage in home network.
+  - [ ] **MotionEye** - A video surveillance OS.
 - [x] **Telegraf** - Agent collecting data and sending it to InfluxDB.
 
 ## Enable SSH and VNC
@@ -347,6 +349,10 @@ References:
 
 - [dperson/samba](https://hub.docker.com/r/dperson/samba) docker image.
 - [Pi 4B NAS running Samba: 80MB/s Read and 110MB/s Write](https://www.reddit.com/r/raspberry_pi/comments/c9xhn1/pi_4b_nas_running_samba_80mbs_read_and_110mbs/)
+
+### MotionEye
+
+  TODO, [IOTstack/wiki/MotionEye](https://github.com/gcgarner/IOTstack/wiki/MotionEye)
 
 ## Telegraf
 

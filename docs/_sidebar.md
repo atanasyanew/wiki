@@ -22,7 +22,8 @@
 - [Raspberry Pi](raspberry-pi/)
   - [Home server using RPI](raspberry-pi/2020-02-rpi-home-server/)
   - [Raspberry Pi Gameboy PiGRRL](raspberry-pi/2020-03-rpi-gameboy-pigrrl/)
-  - [RPi Enviro+ indoor monitoring station **(WIP)**](raspberry-pi/2020-03-rpi-enviro-indoor-monitoring-station/)
+  - [RPI Enviro+ indoor monitoring station](raspberry-pi/2020-03-rpi-enviro-indoor-monitoring-station/)
+  - [Raspberry Pi surveillance system](raspberry-pi/2020-07-rpi-surveillance-system/)
 
 - [Others](others/README.md)
   - [PhD Proof of work](others/phd-proof-of-work/phd-proof-of-work.md)
