@@ -55,7 +55,8 @@ At the end of the day - home server using raspberry pi with the fallowing featur
   - [x] **InfluxDb** - Time-series database.
   - [x] **Grafana** - Visualize data using dashboards.
   - [x] **Samba NAS** - Samba server as Network Attached Storage in home network.
-  - [ ] **MotionEye** - A video surveillance OS.
+  - [x] **MotionEye** - A video surveillance OS.
+  - [x] **diyHue** - Philips Hue emulator that is able to control multiple types of lights
 - [x] **Telegraf** - Agent collecting data and sending it to InfluxDB.
 
 ## Enable SSH and VNC
