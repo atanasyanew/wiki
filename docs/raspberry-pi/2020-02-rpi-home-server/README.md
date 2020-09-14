@@ -1,5 +1,7 @@
 # Home server using RPI
 
+Modified: 2020.09.14
+
 Using raspberry pi for home server
 
 **Table of contents:**
@@ -25,6 +27,7 @@ Using raspberry pi for home server
     - [Grafana](#grafana)
     - [Samba NAS](#samba-nas)
     - [MotionEye](#motioneye)
+    - [diyHue](#diyhue)
   - [Telegraf](#telegraf)
   - [References](#references)
 
@@ -57,7 +60,7 @@ At the end of the day - home server using raspberry pi with the fallowing featur
 
 ## Enable SSH and VNC
 
-```shell
+```bash
 sudo raspi-config
 # Select Interfacing Options
 # Enable SSH
@@ -82,7 +85,7 @@ sudo service dhcpcd status
 
 Edit the ``dhcpcd.conf`` file
 
-```shell
+```bash
 sudo nano /etc/dhcpcd.conf
 
 # Example config settings
@@ -105,13 +108,13 @@ sudo reboot
 ifconfig
 ```
 
-```shell
+```bash
 ping raspberrypi.local
 ```
 
 ## Tools
 
-```shell
+```bash
 # Install Git and htop
 sudo apt-get install git
 sudo apt-get install htop
@@ -148,7 +151,7 @@ Check [Duck DNS](https://www.duckdns.org/), if no static IP address.
 
 The [IOTstack](https://github.com/gcgarner/IOTstack) provides easy way of installing docker as well as creating a compose file for our services and a lot more.
 
-```shell
+```bash
 # Make sure you are in /home/pi/ directory
 git clone https://github.com/gcgarner/IOTstack.git && cd IOTstack/
 
@@ -158,7 +161,7 @@ git clone https://github.com/gcgarner/IOTstack.git && cd IOTstack/
 
 Creating ``docker-compose.yml`` file.
 
-```shell
+```bash
 ./menu.sh
 # Select Build Stack
 
@@ -168,7 +171,7 @@ docker-compose up -d
 
 Updating docker images
 
-```shell
+```bash
 # Stop the containers
 docker-compose down
 
@@ -188,7 +191,7 @@ Uploading docker containers valuable data to cloud (dropbox).
 1. [Get Your Dropbox API Access Token](https://www.dropbox.com/developers/apps/create)
 2. Install Dropbox-Uploader from the script
 
-    ```shell
+    ```bash
     ./menu.sh
     # Navigate to Backup options and follow to the steps (DropBox)
     # Dropbox-Uploader will be installed while asking some configuration settings
@@ -199,7 +202,7 @@ Uploading docker containers valuable data to cloud (dropbox).
    ``~/Dropbox-Uploader/dropbox_uploader.sh`` called from above, upload the files.
    Use cron to schedule script execution:
 
-   ```shell
+   ```bash
     crontab -e
     # Every day at 03:00am.
     0 03 * * * ~/IOTstack/scripts/docker_backup.sh >/dev/null 2>&1
@@ -222,7 +225,7 @@ More details - [IOTstack/wiki/Backups](https://github.com/gcgarner/IOTstack/wiki
 
 ## Log2Ram
 
-```shell
+```bash
 ./menu.sh
 # Navigate to Miscellaneous Commands
 # Install log2ram
@@ -260,7 +263,7 @@ volumes:
 
 Find ``PUID`` and ``PGID`` type ``id`` as below:
 
-```shell
+```bash
 $ id
   uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
 ```
@@ -283,7 +286,7 @@ NODE_RED_ENABLE_PROJECTS=true
 
 or edit the shared setting file
 
-```shell
+```bash
 sudo nano volumes/nodered/data/settings.js
 docker restart nodered
 ```
@@ -303,7 +306,7 @@ Key Concepts
 - Measurement - like tables in SQL
 - Tags & Fields - In a SQL world, data are stored in columns, but in InfluxDB we have two other terms tags & fields. Tags are indexed and values are not
 
-```shell
+```bash
 docker exec -it influxdb influx
 ```
 
@@ -352,13 +355,43 @@ References:
 
 ### MotionEye
 
-  TODO, [IOTstack/wiki/MotionEye](https://github.com/gcgarner/IOTstack/wiki/MotionEye)
+I am having a build of MotionEye running on Pi Zero, check [Raspberry Pi surveillance system](https://wiki.ayanev.eu/#/raspberry-pi/2020-07-rpi-surveillance-system/)
+
+Using the instance of stack to add all the cameras in one place.
+
+Web UI is available at [192.168.0.xxx:8765](192.168.0.xxx:8765)
+
+Adding a camera to the panel.
+
+If your remote camera is version of MotionEye and the option ``Fast Network Camera`` is active, you should add it as fallow:
+
+- Camera Type ``Network Camera``
+- URL ``http://192.168.0.xxx:8081/``, default motionEye camera port
+
+References:
+
+- [IOTstack/wiki/MotionEye](https://github.com/gcgarner/IOTstack/wiki/MotionEye)
+
+### diyHue
+
+The environment variables located in ``/home/pi/IOTstack/services/diyhue/diyhue.env``.
+
+```bash
+ifconfig eth0 # or wlan0
+sudo nano ./services/diyhue/diyhue.env # Place your IP and MAC
+```
+
+Web UI is available at [192.168.0.xxx:8070](192.168.0.xxx:8070)
+
+References:
+
+- [diyHue](https://diyhue.org/)
 
 ## Telegraf
 
 It is possible to install the service via IOTStack, but I prefer installing it directly on the Raspberry Pi's OS, since I want to collecting metrics from the RPI and if its installed under docker I should mess with mounting directories and volumes, permissions, writing scripts for querying data, such as CPU and memory usage, temperature etc..
 
-```shell
+```bash
 # Identify which version of Raspbian you're running. In my case is buster
 cat /etc/os-releases
 
@@ -381,7 +414,7 @@ Links for the dashboards in grafana section provides Collector Configuration Det
 
 The whole configuration file for the mentioned dashboards - [gist.github.com/atanasyanew - telegraf.conf](https://gist.github.com/atanasyanew/5c5db975a7179fc271daea43b6592b5b)
 
-```shell
+```bash
 # Download the configuration from the GitHub Gist
 curl https://gist.githubusercontent.com/atanasyanew/5c5db975a7179fc271daea43b6592b5b/raw/telegraf.conf -O
 
@@ -389,9 +422,9 @@ curl https://gist.githubusercontent.com/atanasyanew/5c5db975a7179fc271daea43b659
 sudo cp telegraf.conf /etc/telegraf/telegraf.conf
 
 # Permissions
-sudo usermod -G video telegraf
-sudo usermod -G docker telegraf
-sudo usermod -aG docker telegraf
+sudo usermod -G video pi
+sudo usermod -G docker pi
+sudo usermod -aG docker pi
 
 # Restart the service
 sudo systemctl restart telegraf

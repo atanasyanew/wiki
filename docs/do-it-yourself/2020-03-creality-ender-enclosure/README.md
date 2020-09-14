@@ -33,15 +33,15 @@ Notes for creating my 3D printer enclosure
 
 | n | File name | QTY | link to file | Description |
 |:-:|------|:---:|------------:|-------------|
-| 1 | ``LACK_foot_Joiner.STL``               | 4 | [thing:2578774](https://www.thingiverse.com/thing:2578774/files) |      |
-| 2 | ``UPPER_LEG_EXTENDER_v3-0.stl``        | 4 | [thing:2578774](https://www.thingiverse.com/thing:2578774/files) |      |
-| 3 | ``LOWER_LEG_EXTENDER_v0-0.stl``        | 4 | [thing:2578774](https://www.thingiverse.com/thing:2578774/files) |      |
-| 4 | ``LEG_HOLDER_-_ALL_FOUR_51x51x23.stl`` | 4 | [thing:2578774](https://www.thingiverse.com/thing:2578774/files) |      |
-| 5 | ``socket_bracket_v1.stl``              | 2 | [thing:4088168](https://www.thingiverse.com/thing:4088168)       | Outlet holder |
-| 6 | ``Cable_bracket.stl``                  | 2 | [thing:1563959](https://www.thingiverse.com/thing:1563959)       | Cable hold down Bracket |
-| 7 | Outlet plug holder (for side mount)    | 1 |                                                                  |      |
+| 1 | ``LACK_foot_Joiner.STL``               | 4 | [thing:2578774](https://www.thingiverse.com/thing:2578774/files) |                             |
+| 2 | ``UPPER_LEG_EXTENDER_v3-0.stl``        | 4 | [thing:2578774](https://www.thingiverse.com/thing:2578774/files) |                             |
+| 3 | ``LOWER_LEG_EXTENDER_v0-0.stl``        | 4 | [thing:2578774](https://www.thingiverse.com/thing:2578774/files) |                             |
+| 4 | ``LEG_HOLDER_-_ALL_FOUR_51x51x23.stl`` | 4 | [thing:2578774](https://www.thingiverse.com/thing:2578774/files) |                             |
+| 5 | ``socket_bracket_v1.stl``              | 2 | [thing:4088168](https://www.thingiverse.com/thing:4088168)       | Outlet holder               |
+| 6 | ``Cable_bracket.stl``                  | 2 | [thing:1563959](https://www.thingiverse.com/thing:1563959)       | Cable hold down Bracket     |
+| 7 | Outlet plug holder (for side mount)    | 1 |                                                                  |                             |
 | 8 | ``120mm-fan-hepa-filter-like.stl``     | 1 | [thing:4331348](https://www.thingiverse.com/thing:4331348)       | Bottom, electronics cooling |
-| 9 | Ikea Lack Grommet                      | 1 | [thing:2225786](https://www.thingiverse.com/thing:2225786/)      | Assembly of two parts |
+| 9 | Ikea Lack Grommet                      | 1 | [thing:2225786](https://www.thingiverse.com/thing:2225786/)      | Assembly of two parts       |
 
 ## Show case
 
