@@ -11,14 +11,21 @@ Modified 2020-07-31
 
 Home server panel
 
+For the panel I'm using IKEA Skadis board, mounted on Kallax via [thing:4580900](https://www.thingiverse.com/thing:4580900)
+
 ## Show case
 
-Version 02
+Version 3
+
+| ![01](./assets/server-panel-v3-01.jpg) | ![02](./assets/server-panel-v3-02.jpg) |
+|:--------------------------------------:|:--------------------------------------:|
+
+Version 2
 
 | ![01](./assets/server-panel-v2-02.jpg) | ![02](./assets/server-panel-v2-01.jpg) |
 |:--------------------------------------:|:--------------------------------------:|
 
-Version 01, the first
+Version 1, the first
 
 | ![01](./assets/server-panel-v1-01.jpg) | ![02](./assets/server-panel-v1-02.jpg) |
 |:--------------------------------------:|:--------------------------------------:|
