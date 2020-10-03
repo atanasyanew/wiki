@@ -1,6 +1,6 @@
 # Home server using RPI
 
-Modified: 2020.09.14
+Modified: 2020-11.01
 
 Using raspberry pi for home server
 
@@ -432,6 +432,14 @@ sudo systemctl restart telegraf
 sudo systemctl status telegraf
 ```
 
+Automation script for all the steps above
+
+```bash
+curl https://gist.githubusercontent.com/atanasyanew/fa4cc748c2b3234a0de20db9b76ed00b/raw/telegraf-install.sh -O
+
+sudo bash ./telegraf-install.sh
+```
+
 ---
 
 ## References
@@ -442,5 +450,5 @@ sudo systemctl status telegraf
 - [PiVPN - GitHub](https://github.com/pivpn/pivpn)
 - [PiVPN - medium.com, How to use PiVPN to create your own VPN.](https://medium.com/@jasonrigden/how-to-use-pivpn-b65a3a3f0759)
 - [PiVPN - YouTube, HOW TO SETUP PiVPN ON THE RASPBERRY PI TUTORIAL](https://www.youtube.com/watch?v=9RSHSt4RuLk)
-- [Static IP - How to set a Raspberry Pi with a static ip address](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)
+- [Static IP - How to set a Raspberry Pi with a static IP address](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)
 - [Static IP - piHut, How to give your Raspberry Pi a Static IP Address](https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-give-your-raspberry-pi-a-static-ip-address-update)
