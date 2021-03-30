@@ -27,6 +27,9 @@
   - [RPI Enviro+ indoor monitoring station](raspberry-pi/2020-03-rpi-enviro-indoor-monitoring-station/)
   - [Raspberry Pi surveillance system](raspberry-pi/2020-07-rpi-surveillance-system/)
 
+- [DevOps](devops/)
+  - [Infrastructure as code ARM templates](devops/2021-03-30-iac-azure-arm-templates/)
+
 - [Others](others/README.md)
   - [PhD Proof of work](others/phd-proof-of-work/phd-proof-of-work.md)
   - [Typography](others/typography/)
