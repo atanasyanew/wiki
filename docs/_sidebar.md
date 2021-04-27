@@ -11,6 +11,7 @@
   - [Data structures **(WIP)**](data-structures-and-algorithms/data-structures/)
 
 - [DIY](do-it-yourself/README.md)
+  - [Light up the home](do-it-yourself/2021-04-light-up-the-home/)
   - [DIYHue LED light strip](do-it-yourself/2020-09-diyhue-led-strip/)
   - [Monitor ambient light](do-it-yourself/2020-09-monitor-ambient-light/)
   - [Creality ender enclosure](do-it-yourself/2020-03-creality-ender-enclosure/)
