@@ -47,6 +47,7 @@
   - [Docker 101](drafts/docker/)
   - [Git 101](drafts/git-notes/)
   - [TypeScript 101](drafts/typescript/)
+  - [Blockchain 101](drafts/blockchain/)
   - [Linked list](drafts/linked-lists/)
   - [N-layer architecture app](drafts/n-tier-architecture/)
   - [Object oriented programming 101](drafts/object-oriented-programming-notes/)
