@@ -16,6 +16,7 @@
   - [C# - Extension Methods](#c---extension-methods)
   - [CLR ILDASM and ILASM](#clr-ildasm-and-ilasm)
   - [TypeDef vs TypeRef](#typedef-vs-typeref)
+  - [Others](#others)
 
 basics of c#
 
@@ -329,3 +330,21 @@ namespace EnumExtension
 ## TypeDef vs TypeRef
 
 [TypeDef vs. TypeRef](https://docs.microsoft.com/en-us/archive/blogs/jmstall/typedef-vs-typeref)
+
+## Others
+
+Why memory matters <br>
+[![ ](http://img.youtube.com/vi/k09bkM3_gsE/0.jpg)](https://www.youtube.com/watch?v=k09bkM3_gsE "Why memory matters")
+
+.NET CLR Execution Model <br>
+[![ ](http://img.youtube.com/vi/gCHoBJf4htg/0.jpg)](https://www.youtube.com/watch?v=gCHoBJf4htg ".NET CLR Execution Model")
+
+
+> Mutex is an object owned by thread so there is ownership in mutex.<br>
+> Mutex allow only one thread to access resource
+> 
+> Semaphore is signaling mechanism. <br>
+> It allows a number of thread to access shared resources
+
+What is difference between Semaphore and Mutex <br>
+[![ ](http://img.youtube.com/vi/DvF3AsTglUU/0.jpg)](https://www.youtube.com/watch?v=DvF3AsTglUU "What is difference between Semaphore and Mutex")
