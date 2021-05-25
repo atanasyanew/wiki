@@ -20,8 +20,9 @@ Common data structures
       - [Graphs](#graphs)
       - [Trees](#trees)
       - [Binary Search](#binary-search)
-      - [BFS](#bfs)
-      - [DFS](#dfs)
+      - [BFS and DFS](#bfs-and-dfs)
+        - [BFS](#bfs)
+        - [DFS](#dfs)
       - [Dijkstra](#dijkstra)
 
 ## Data structures hierarchy
@@ -183,9 +184,75 @@ Graph g = new Graph(new List<int>[] {
 
 #### Binary Search
 
-#### BFS
+#### BFS and DFS
 
-#### DFS
+Depth-First Search (DFS) and Breadth-First Search (BFS) can traverse graphs <br>
+Each vertex should be visited at most once
+
+BFS is going to use more memory depending on the branching factor... however, BFS is a complete algorithm... meaning if you are using it to search for something in the lowest depth possible, BFS will give you the optimal solution. BFS space complexity is O(b^d)... the branching factor raised to the depth (can be A LOT of memory).
+
+DFS on the other hand, is much better about space however it may find a suboptimal solution. Meaning, if you are just searching for a path from one vertex to another, you may find the suboptimal solution (and stop there) before you find the real shortest path. DFS space complexity is O(|V|)... meaning that the most memory it can take up is the longest possible path.
+They have the same time complexity.
+In terms of implementation, BFS is usually implemented with Queue, while DFS uses a Stack.
+
+[Graphs data structure: DFS vs BFS?](https://stackoverflow.com/questions/2626198/graphs-data-structure-dfs-vs-bfs)
+
+Algorithms: Graph Search, DFS and BFS <br>
+[![](http://img.youtube.com/vi/zaBhtODEL0w/0.jpg)](https://www.youtube.com/watch?v=zaBhtODEL0w "Algorithms: Graph Search, DFS and BFS")
+
+
+
+##### BFS  
+
+Breadth-first search (BFS), **uses Queue** <br>
+Breadth-First Search first visits the neighbor nodes, later their neighbors, etc.
+
+| BFS |
+|:---:|
+| ![img](assets/bfs-01.jpg) |
+
+Pseudocode example
+
+```
+BFS(node)
+{
+  queue ← node
+  visited[node] = true
+  while queue not empty
+    v ← queue
+    print v
+    for each child c of v
+      if not visited[c]
+        queue ← c
+        visited[c] = true
+}
+```
+
+##### DFS
+
+DFS, **uses stack** <br>
+Depth-First Search first visits all descendants of given node recursively, finally visits the node itself.
+
+| DFS |     |
+|:---:|:---:|
+| ![img](assets/dfs-01.jpg) | ![img](assets/dfs-02.png) |
+
+Pseudocode example
+
+```
+DFS(node)
+{
+  stack ← node
+  visited[node] = true
+  while stack not empty
+    v ← stack
+    print v
+    for each child c of v
+      if not visited[c]
+        stack ← c
+        visited[c] = true
+}
+```
 
 #### Dijkstra
 
