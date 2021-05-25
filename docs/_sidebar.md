@@ -46,6 +46,7 @@
   - [Dijkstra's algorithm](drafts/dijkstras-algorithm/)
   - [Docker 101](drafts/docker/)
   - [Git 101](drafts/git-notes/)
+  - [TypeScript 101](drafts/typescript/)
   - [Linked list](drafts/linked-lists/)
   - [N-layer architecture app](drafts/n-tier-architecture/)
   - [Object oriented programming 101](drafts/object-oriented-programming-notes/)
