@@ -10,6 +10,7 @@ Notes about infrastructure as Code using Azure ARM templates.
   - [The Basics](#the-basics)
     - [Create a resource group](#create-a-resource-group)
     - [Create ARM template](#create-arm-template)
+    - [Sample ARM templates](#sample-arm-templates)
     - [Deploy](#deploy)
   - [References](#references)
 
@@ -90,9 +91,23 @@ Different approach is to manually create resources and then export them as templ
 
 Check the links in [References](#references) section, there are some damn good tutorials about creating an ARM templates.
 
+### Sample ARM templates
 
-!> Work in process!
-- Sample template to be provided
+You may look at this sample templates
+
+[az-arm-netapi-webapp-st-mssql.json](https://gist.github.com/atanasyanew/14e40a6700d3132d7c2e652dcf8a9a3c)
+- Storage account and Blob
+- MS SQL
+- App service plan
+- .NET Core API
+- Web app
+
+[az-arm-netapi-webapp-st-pssql.json](https://gist.github.com/atanasyanew/e6ef5d8c1053feb779df23272480d51f)
+- Storage account and Blob
+- PostgreSQL
+- App service plan
+- .NET Core API
+- Web app
 
 <!-- Web apps
 App Service includes full support for hosting web apps by using ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python. You can choose either Windows or Linux as the host operating system.
