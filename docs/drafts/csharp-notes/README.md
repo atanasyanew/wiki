@@ -41,6 +41,8 @@ MVC
 
 language integrated query
 
+Set operations in LINQ refer to query operations that produce a result set that is based on the presence or absence of equivalent elements within the same or separate collections (or sets).
+
 - uniform query syntax
 - used to interact numerious data types
 
@@ -105,6 +107,9 @@ Lambda expression
 
 - anonymous function, containing expression and statems
 - used to create delegates or expression tree types
+
+
+
 
 ## Entity framework ##
 
