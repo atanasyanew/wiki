@@ -89,7 +89,95 @@ LIFO - last in, first out
 
 #### Hash tables
 
+[Data Structure and Algorithms - Hash Table](https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm)
+
+[Hash table](https://en.wikipedia.org/wiki/Hash_table)
+
+Hash Tables and Hash Functions <br>
+[![](http://img.youtube.com/vi/KyUTuwz_b7Q/0.jpg)](https://www.youtube.com/watch?v=KyUTuwz_b7Q "Hash Tables and Hash Functions")
+
+Hash Tables <br>
+[![](http://img.youtube.com/vi/h2d9b_nEzoA/0.jpg)](https://www.youtube.com/watch?v=h2d9b_nEzoA "Hash Tables")
+
+**Collision** refers to a situation where a function maps two distinct inputs to the same output. <br>
+A collision is the situation when **different keys have the same hash value** ``h(k1) = h(k2) for k1 ≠ k2``
+
+Solving Collision:
+ - Linear Probing
+   - If key match the same index, store the value to next free slot
+   - Notes
+     - Hash table will get large, 
+	   - clustering - when more and more collisions,
+     - abstract data type (ADT)
+ - Separate Chaining
+   - Hash table become array of linked lists
+
+Summary
+
+- Used to index large amounts of data
+- Address of each key calculated using the key itself
+- Collisions resolved with open or closed addressing
+- Hashing is widely used in database indexing, compilers, caching, password authentication, and more
+- Insertion, deletion and retrieval occur in constant time
+
 #### Graphs
+
+[Graph & Graph Models](https://www.tutorialspoint.com/discrete_mathematics/graph_and_graph_models.htm)
+
+[Data Structure - Graph Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/graph_data_structure.htm)
+
+**Weighted** and **unweighted** graphs
+
+Weight (cost) is associated with each edge
+
+Data structures: Introduction to graphs <br>
+[![](http://img.youtube.com/vi/gXgEDyodOJU/0.jpg)](https://www.youtube.com/watch?v=gXgEDyodOJU "Data structures: Introduction to graphs")
+
+Graphs and Their Applications, Graphs have many real-world applications
+
+- Modeling a computer network like Internet
+  - Routes are simple paths in the network
+- Modeling a city map
+  - Streets are edges, crossings are vertices
+- Social networks
+  - People are nodes and their connections are edges
+- State machines
+  - States are nodes, transitions are edges
+
+Representing Graphs
+
+- Adjacency list
+  - Each node holds a list of its neighbors
+- Adjacency matrix
+	- Each cell keeps whether and how two nodes are connected
+- Set of edges
+
+|     |     |     |
+|:---:|:---:|:---:|
+| ![img](assets/graphs-01.png) | ![img](assets/graphs-02.png) | ![img](assets/graphs-03.png) |
+
+Simple C# Representation
+
+```csharp
+public class Graph
+{
+  List<int>[] childNodes;
+  public Graph(List<int>[] nodes)
+  {
+    this.childNodes = nodes;
+  }
+}
+
+Graph g = new Graph(new List<int>[] {
+  new List<int> {3, 6}, // successors of vertice 0
+  new List<int> {2, 3, 4, 5, 6},// successors of vertice 1
+  new List<int> {1, 4, 5}, // successors of vertice 2
+  new List<int> {0, 1, 5}, // successors of vertice 3
+  new List<int> {1, 2, 6}, // successors of vertice 4
+  new List<int> {1, 2, 3}, // successors of vertice 5
+  new List<int> {0, 1, 4}  // successors of vertice 6
+});
+```
 
 #### Trees
 
