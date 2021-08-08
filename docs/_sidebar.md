@@ -23,7 +23,8 @@
   - [Fish tank stand](do-it-yourself/2020-03-fish-tank-stand/)
 
 - [Raspberry Pi](raspberry-pi/)
-  - [Home server using RPI](raspberry-pi/2020-02-rpi-home-server/)
+  - [Raspberry Pi Home server](raspberry-pi/2020-02-rpi-home-server/)
+  - [Raspberry Pi NAS and media server](raspberry-pi/2021-08-rpi-nas-media-server/)
   - [Raspberry Pi Gameboy PiGRRL](raspberry-pi/2020-03-rpi-gameboy-pigrrl/)
   - [RPI Enviro+ indoor monitoring station](raspberry-pi/2020-03-rpi-enviro-indoor-monitoring-station/)
   - [Raspberry Pi surveillance system](raspberry-pi/2020-07-rpi-surveillance-system/)
