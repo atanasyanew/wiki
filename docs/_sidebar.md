@@ -11,6 +11,7 @@
   - [Data structures **(WIP)**](data-structures-and-algorithms/data-structures/)
 
 - [DIY](do-it-yourself/README.md)
+  - [Server rack 10"](do-it-yourself/2021-08-server-rack-10inch/)
   - [Light up the home](do-it-yourself/2021-04-light-up-the-home/)
   - [DIYHue LED light strip](do-it-yourself/2020-09-diyhue-led-strip/)
   - [Monitor ambient light](do-it-yourself/2020-09-monitor-ambient-light/)
