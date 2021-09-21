@@ -1,6 +1,6 @@
 # Creality Ender 3 enclosure
 
-*Modified 2020-05-02*
+*Modified 2021-09-21*
 
 - [Creality Ender 3 enclosure](#creality-ender-3-enclosure)
   - [Description](#description)
@@ -8,6 +8,7 @@
   - [Parts, 3D printed](#parts-3d-printed)
   - [Show case](#show-case)
   - [TODOs](#todos)
+  - [Rev.1](#rev1)
 
 ## Description
 
@@ -75,3 +76,12 @@ Bottom, above view
 - Consider moving PSU outside (bottom of the enclosure) or update flow of the air (PSU)
   - [Ender 3 / Ender 3 Pro - Underside PSU Mount](https://www.thingiverse.com/thing:3349588)
 - Additional safety features (Smoke and fire alarm)
+
+## Rev.1
+
+2021-09
+
+Added leg base to mount tires to the enclosure, [thing:4970764](https://www.thingiverse.com/thing:4970764)
+
+| ![rev01](./assets/rev01-01.jpg) | ![rev01](./assets/rev01-02.jpg) | ![rev01](./assets/rev01-03.jpg) | ![rev01](./assets/rev01-04.jpg) |
+|:-------------------------------:|:-------------------------------:|:-------------------------------:|:-------------------------------:|
