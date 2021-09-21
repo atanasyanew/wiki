@@ -18,7 +18,7 @@ Notes about creating Hue like play bar.
 
 | Name | QTY | Price € | Notes |
 |:-----|:---:|--------:|:------|
-| ``hue-play-body.stl``       | 1   |     | 3D printed, [thing:4900491](https://www.thingiverse.com/thing:4900491) |
+| ``hue-play-body.stl``       | 1   |     | 3D printed, [thing:4970685](https://www.thingiverse.com/thing:4970685) |
 | ``hue-play-leds-frame.stl`` | 1   |     | 3D printed |
 | ``hue-play-back-plate.stl`` | 1   |     | 3D printed |
 | ``d1-mini-case.stl``        | 1   |     | 3D printed |
