@@ -1,6 +1,6 @@
 # Creality Ender 3 enclosure
 
-Modified: 2020.05.02
+*Modified 2020-05-02*
 
 - [Creality Ender 3 enclosure](#creality-ender-3-enclosure)
   - [Description](#description)

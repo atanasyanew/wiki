@@ -1,6 +1,6 @@
 # Raspberry Pi surveillance system
 
-Modified 2020-07-31
+*Modified 2020-07-31*
 
 - [Raspberry Pi surveillance system](#raspberry-pi-surveillance-system)
   - [Description](#description)

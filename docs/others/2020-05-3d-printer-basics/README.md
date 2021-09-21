@@ -1,6 +1,6 @@
 # 3D Printer basics
 
-Modified: 2020.05.02
+*Modified 2020-05-02*
 
 TOC
 

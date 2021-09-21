@@ -1,6 +1,6 @@
 # Monitor ambient light
 
-Modified 2020-10-03
+*Modified 2020-10-03*
 
 - [Monitor ambient light](#monitor-ambient-light)
   - [Description](#description)

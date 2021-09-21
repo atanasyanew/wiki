@@ -1,6 +1,6 @@
 # DiyHue LED light strip
 
-Modified 2020-09-14
+*Modified 2020-09-14*
 
 - [DiyHue LED light strip](#diyhue-led-light-strip)
   - [Description](#description)

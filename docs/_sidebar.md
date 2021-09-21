@@ -13,6 +13,7 @@
 - [DIY](do-it-yourself/README.md)
   - [Server rack 10"](do-it-yourself/2021-08-server-rack-10inch/)
   - [Light up the home](do-it-yourself/2021-04-light-up-the-home/)
+  - [DIYHue play bar](do-it-yourself/2021-09-diyhue-play-bar/)
   - [DIYHue LED light strip](do-it-yourself/2020-09-diyhue-led-strip/)
   - [Monitor ambient light](do-it-yourself/2020-09-monitor-ambient-light/)
   - [Creality ender enclosure](do-it-yourself/2020-03-creality-ender-enclosure/)

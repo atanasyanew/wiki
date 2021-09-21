@@ -1,6 +1,6 @@
 # Infrastructure as code, Azure ARM templates
 
-ModifiedOn: 2021-03-29
+*Modified 2021-03-29*
 
 Notes about infrastructure as Code using Azure ARM templates.
 

@@ -1,6 +1,6 @@
 # Home server using RPI
 
-Modified: 2020-11.01
+*Modified 2020-11-01*
 
 Using raspberry pi for home server
 
