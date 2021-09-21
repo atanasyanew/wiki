@@ -2,7 +2,7 @@
 
 - [Home](home.md)
 
-- [Data structures and Algorithms](data-structures-and-algorithms/README.md)
+- [Data structures and algorithms](data-structures-and-algorithms/README.md)
   - [Algorithms](data-structures-and-algorithms/algorithms/)
     - [Sorting algorithms](data-structures-and-algorithms/algorithms/algorithms-sorting.md)
     - [Searching algorithms](data-structures-and-algorithms/algorithms/algorithms-searching.md)
@@ -16,12 +16,11 @@
   - [DIYHue play bar](do-it-yourself/2021-09-diyhue-play-bar/)
   - [DIYHue LED light strip](do-it-yourself/2020-09-diyhue-led-strip/)
   - [Monitor ambient light](do-it-yourself/2020-09-monitor-ambient-light/)
-  - [Creality ender enclosure](do-it-yourself/2020-03-creality-ender-enclosure/)
-  - [Aquarium electronics cabinet](do-it-yourself/2019-09-aquarium-electronics-cabinet/)
   - [Home server panel](do-it-yourself/2019-09-home-server-panel/)
   - [Weather stations](do-it-yourself/2019-06-weather-station/)
   - [Portable workbench](do-it-yourself/2019-05-portable-workbench/)
   - [Lab bench power supply](do-it-yourself/2018-07-lab-bench-power-supply/)
+  - [Aquarium electronics cabinet](do-it-yourself/2019-09-aquarium-electronics-cabinet/)
   - [Fish tank stand](do-it-yourself/2020-03-fish-tank-stand/)
 
 - [Raspberry Pi](raspberry-pi/)
@@ -34,10 +33,13 @@
 - [DevOps](devops/)
   - [Infrastructure as code ARM templates](devops/2021-03-30-iac-azure-arm-templates/)
 
+- [3D printing](3d-printing/)
+  - [3D Printer basics](3d-printing/2020-05-3d-printer-basics/)
+  - [Creality ender enclosure](3d-printing/2020-03-creality-ender-enclosure/)
+
 - [Others](others/README.md)
   - [PhD Proof of work](others/phd-proof-of-work/phd-proof-of-work.md)
   - [Typography](others/typography/)
-  - [3D Printer basics](others/2020-05-3d-printer-basics/)
 
 ---
 
