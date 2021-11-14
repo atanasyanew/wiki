@@ -25,7 +25,7 @@
 
 - [Raspberry Pi](raspberry-pi/)
   - [Raspberry Pi Home server](raspberry-pi/2020-02-rpi-home-server/)
-    - [CHANGELOG, Home server](raspberry-pi/2020-02-rpi-home-server/changelog.md)
+    - [CHANGELOG, Home server](raspberry-pi/2020-02-rpi-home-server/CHANGELOG.md)
   - [Raspberry Pi NAS and media server](raspberry-pi/2021-08-rpi-nas-media-server/)
   - [Raspberry Pi Gameboy PiGRRL](raspberry-pi/2020-03-rpi-gameboy-pigrrl/)
   - [RPI Enviro+ indoor monitoring station](raspberry-pi/2020-03-rpi-enviro-indoor-monitoring-station/)
