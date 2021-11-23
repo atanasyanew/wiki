@@ -1,10 +1,11 @@
 # DIY Hue play bar
 
-*Modified 2021-09-21*
+*Created 2021-09-21*
 
 Notes about creating Hue like play bar.
 
 - [DIY Hue play bar](#diy-hue-play-bar)
+  - [Changelog](#changelog)
   - [BOM](#bom)
   - [Assembly](#assembly)
   - [Software](#software)
@@ -13,6 +14,11 @@ Notes about creating Hue like play bar.
     - [Lights firmware](#lights-firmware)
   - [Show case](#show-case)
 
+## Changelog
+
+- 2021-11-23
+  - Model renders
+  - Added diffuser panel model 
 
 ## BOM
 
@@ -33,8 +39,10 @@ Notes about creating Hue like play bar.
 
 ## Assembly
 
-| ![hue-play-assembly.gif](./assets/images/hue-play-assembly.gif) | ![hue-play-drawing.png](./assets/images/hue-play-drawing.png) | 
-|:---------------------------------------------------------------:|:-------------------------------------------------------------:|
+| ![hue-play-assembly.gif](./assets/images/hue-play-assembly.gif)   | ![hue-play-drawing.png](./assets/images/hue-play-drawing.png) | 
+|:-----------------------------------------------------------------:|:-------------------------------------------------------------:|
+| ![hue-play-render-01.PNG](./assets/images/hue-play-render-01.PNG) | ![hue-play-render-02.PNG](./assets/images/hue-play-render-02.PNG) |
+| ![hue-play-render-03.png](./assets/images/hue-play-render-03.png) | ![hue-play-render-04.png](./assets/images/hue-play-render-04.png) | 
 
 ## Software
 
