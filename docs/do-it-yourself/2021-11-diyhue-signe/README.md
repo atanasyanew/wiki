@@ -26,7 +26,7 @@
 | ESP8266 NodeMCU / D1 mini         | 1   | 1.5 |    |
 | MicroUSB to USB A cable           | 1   | 1   | Purchased 1m cable with polyester yarn sheathing |
 | Screws, M3X25mm                   | 4   |     | Any M3 screws |
-| 5V Purchased                      |     |     | Optional, floor lamp  |
+| 5V PSU                            |     |     | Optional, floor lamp  |
 |                                   |     |     |    |
 | 3D Printable                      |     |     |    |
 | ``hue-signe-base-frame-test.stl`` | 1   |     | Used before you begin to check if the led profile fits |
