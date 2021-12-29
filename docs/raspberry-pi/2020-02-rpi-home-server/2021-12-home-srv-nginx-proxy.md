@@ -3,7 +3,9 @@
 *Modified 2021-12-28*
 
 Reverse proxy allowing the management of incoming connections/requests to be redirected to the correct device and service, 
-adds an layer of security for devices that are hosted as it does not directly expose the device to the internet.<br>
+adds a layer of security for devices that are hosted as it does not directly expose the device to the internet.<br>
+Without reverse proxy in order to access a service we have to expose a port for each service, Imagine if we have many services how much ports we have to expose and the security vulnerability will increase.<br>
+With proxy manager we can expose one port only for the nginx and thats all, based on configuration it will route/redirect the traffic to the desired service
 There are many benefits of using reverse proxy, not mentioned here, since the content will be too long.
     
 | ![reverse-proxy-diagram-01.webp](./assets/reverse-proxy-diagram-01.webp) | ![reverse-proxy-diagram-02.png](./assets/reverse-proxy-diagram-02.png) |
@@ -48,6 +50,6 @@ From within router settings find a section called ``Virtual servers``, then open
 **Resources**
 
 - [NGINX PROXY MANAGER TUTORIAL RASPBERRY PI 4 INSTALLATION - EPISODE 6](https://www.youtube.com/watch?v=UoABJxIeq3A&list=PL9z5ElY5ntAZvTLNM99a2L98YMxMIqC_O&index=9&t=1s)<br>
-  YouTube, A very good explanation about how reverse proxy works and what would it be is not used.
+  YouTube, A very good explanation how reverse proxy works and what would it be is not used.
 - [nginx proxy manager](https://nginxproxymanager.com/)<br>
   Project website, official docs.
