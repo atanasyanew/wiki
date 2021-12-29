@@ -50,6 +50,8 @@ From within router settings find a section called ``Virtual servers``, then open
 **Resources**
 
 - [NGINX PROXY MANAGER TUTORIAL RASPBERRY PI 4 INSTALLATION - EPISODE 6](https://www.youtube.com/watch?v=UoABJxIeq3A&list=PL9z5ElY5ntAZvTLNM99a2L98YMxMIqC_O&index=9&t=1s)<br>
-  YouTube, A very good explanation how reverse proxy works and what would it be is not used.
+  YouTube, a very good explanation how reverse proxy works and what would it be is not used.
+- [How to Install Nginx Proxy Manager on a Raspberry Pi!](https://www.youtube.com/watch?v=jp7zqjNhTAs)<br>
+  Youtube, another good tutorial about Nginx Proxy Manager.
 - [nginx proxy manager](https://nginxproxymanager.com/)<br>
   Project website, official docs.
