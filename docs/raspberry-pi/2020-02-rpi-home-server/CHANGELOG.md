@@ -1,12 +1,12 @@
 # Home server changelog
 
-*Modified 2021-12-21*
+*Modified 2021-01-03*
 
 ## Changelog updates
 
 - 2021-11-14 [Heimdall](https://heimdall.site/) container introduced to the docker stack.
 - 2021-12-28 [NGINX Proxy Manager](https://nginxproxymanager.com/) container added to the stack.
-<!-- - 2021-12-21 [WireGuard](https://www.wireguard.com/) container added to the stack. -->
+- 2021-01-03 [WireGuard](https://www.wireguard.com/) container added to the stack.
 
 ---
 
@@ -18,8 +18,9 @@
 
 ---
 
-<!-- [2021-12-home-srv-wireguard.md](2021-12-home-srv-wireguard.md ':include') -->
+[2022-01-home-srv-wireguard.md](2022-01-home-srv-wireguard.md ':include')
 
+---
 
 <!--
   TODOS:
