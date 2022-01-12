@@ -10,8 +10,9 @@
     - [Other algorithms **(WIP)**](data-structures-and-algorithms/algorithms/algorithms-other.md)
   - [Data structures **(WIP)**](data-structures-and-algorithms/data-structures/)
 
-- [DIY](do-it-yourself/README.md)
+- [DIY](do-it-yourself/)
   - [ESPHome 101](do-it-yourself/2022-01-esphome/)
+    - [ESPhome nodes](do-it-yourself/2022-01-esphome/esphome-nodes.md)
   - [Server rack 10"](do-it-yourself/2021-08-server-rack-10inch/)
   - [DIYHue signe lamp](do-it-yourself/2021-11-diyhue-signe/)
   - [Light up the home](do-it-yourself/2021-04-light-up-the-home/)
