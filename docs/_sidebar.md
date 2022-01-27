@@ -36,6 +36,7 @@
 
 - [DevOps](devops/)
   - [Infrastructure as code ARM templates](devops/2021-03-iac-azure-arm-templates/)
+  - [ElasticSearch transferring indices](devops/2022-01-es-transferring-indices/)
 
 - [3D printing](3d-printing/)
   - [3D Printer basics](3d-printing/2020-05-3d-printer-basics/)
