@@ -2,6 +2,8 @@
 
 <!-- Date: Jun 18, 2019 -->
 
+!> Deprecated
+
 - [Weather stations](#weather-stations)
   - [Description](#description)
   - [Show cases](#show-cases)
@@ -13,7 +15,7 @@ Home repository from my weather stations
 The repository contains two versions of the weather stations, with small differences between them.
 
 - Indoor station, source code: [/src/indoor-station](/src/indoor-station)
-- **WIP!** Outdoor weather station
+
 
 Both stations using MQTT to communicate with RPI.
 The RPI host a Node-Red instance that take care for the rest like data storing, visualizing etc..

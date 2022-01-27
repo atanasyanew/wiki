@@ -35,7 +35,7 @@
   - [Raspberry Pi surveillance system](raspberry-pi/2020-07-rpi-surveillance-system/)
 
 - [DevOps](devops/)
-  - [Infrastructure as code ARM templates](devops/2021-03-30-iac-azure-arm-templates/)
+  - [Infrastructure as code ARM templates](devops/2021-03-iac-azure-arm-templates/)
 
 - [3D printing](3d-printing/)
   - [3D Printer basics](3d-printing/2020-05-3d-printer-basics/)
