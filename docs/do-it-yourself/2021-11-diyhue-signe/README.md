@@ -1,10 +1,10 @@
-# DIY Hue signe lamp
+# DiyHue signe lamp
 
 *Created 2021-11-25*
 
 3D printable Hue Gradient Signe lamp.
 
-- [DIY Hue signe lamp](#diy-hue-signe-lamp)
+- [DiyHue signe lamp](#diyhue-signe-lamp)
   - [Changelog](#changelog)
   - [BOM](#bom)
   - [Assembly](#assembly)

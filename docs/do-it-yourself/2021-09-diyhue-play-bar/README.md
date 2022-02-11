@@ -1,10 +1,10 @@
-# DIY Hue play bar
+# DiyHue play bar
 
 *Created 2021-09-21*
 
 Notes about creating Hue like play bar.
 
-- [DIY Hue play bar](#diy-hue-play-bar)
+- [DiyHue play bar](#diyhue-play-bar)
   - [Changelog](#changelog)
   - [BOM](#bom)
   - [Assembly](#assembly)
