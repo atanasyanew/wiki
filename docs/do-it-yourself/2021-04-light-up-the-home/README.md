@@ -1,4 +1,4 @@
-# Home lights
+# DiyHue home lights
 
 *Modified 2021-04-26*
 
@@ -26,7 +26,7 @@ Video with the lights in action coming soon..
 
 ## ToC
 
-- [Home lights](#home-lights)
+- [DiyHue home lights](#diyhue-home-lights)
   - [ToC](#toc)
   - [Lights installed](#lights-installed)
   - [Light guidelines](#light-guidelines)

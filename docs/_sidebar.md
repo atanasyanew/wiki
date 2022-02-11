@@ -14,7 +14,7 @@
   - [ESPHome 101](do-it-yourself/2022-01-esphome/)
     - [ESPhome nodes](do-it-yourself/2022-01-esphome/esphome-nodes.md)
   - [Server rack 10"](do-it-yourself/2021-08-server-rack-10inch/)
-  - [Light up the home](do-it-yourself/2021-04-light-up-the-home/)
+  - [DiyHue home lights](do-it-yourself/2021-04-light-up-the-home/)
   - [DIYHue signe lamp](do-it-yourself/2021-11-diyhue-signe/)
   - [DIYHue play bar](do-it-yourself/2021-09-diyhue-play-bar/)
   - [DIYHue light strip](do-it-yourself/2020-09-diyhue-led-strip/)
