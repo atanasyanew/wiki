@@ -21,9 +21,6 @@ An ESP32 board will act as bluetooth gateway that collects data from the sensors
 | LYWSD03MMC Xiaomi Temperature and Humidity | 4  |    | [XIAOMI Mijia Bluetooth Thermometer 2](https://www.aliexpress.com/item/1005001723129052.html?spm=a2g0o.9042311.0.0.74464c4d0lSabq) |
 | ESP32 board                                | 1  | 16 | [ESP32 ESP-32 Development Board](https://www.aliexpress.com/item/1005001929935550.html?spm=a2g0o.9042311.0.0.74464c4d0lSabq) | 
 
-!> TODO<br>
-  Should design and 3D print a tray and mount the gateway into the server rack.
-
 ## Upload new firmware to the sensors
 
 1. Open the WebFlasher [TelinkFlasher](https://atc1441.github.io/TelinkFlasher.html).
