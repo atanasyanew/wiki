@@ -47,7 +47,7 @@ Using a D1 mini triple base extension board to stack them all and some 3D printe
 | SD Card shield                      |    |    | Optional, WIP  |
 | Battery shield                      |    |    | Optional       |
 
-As an additional you may 3D Print a case such as [TODO](https://www.thingiverse.com/ayanev/designs) or if having a 10" inch server rack - [TODO](https://www.thingiverse.com/ayanev/designs).
+As an additional you may 3D Print a case such as [thing:5265765, D1 Mini showcase panel](https://www.thingiverse.com/thing:5265765) or [thing:5265732, Server rack 10" - D1 Mini mount](https://www.thingiverse.com/thing:5265732).
 
 ## ESPHome node configuration
 
