@@ -37,6 +37,7 @@
   - [Raspberry Pi surveillance system](raspberry-pi/2020-07-rpi-surveillance-system/)
 
 - [DevOps](devops/)
+  - [Ansible 101](devops/2022-03-ansible/)
   - [Infrastructure as code ARM templates](devops/2021-03-iac-azure-arm-templates/)
   - [ElasticSearch transferring indices](devops/2022-01-es-transferring-indices/)
 
