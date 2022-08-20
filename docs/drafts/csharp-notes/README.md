@@ -348,3 +348,11 @@ Why memory matters <br>
 
 What is difference between Semaphore and Mutex <br>
 [![ ](http://img.youtube.com/vi/DvF3AsTglUU/0.jpg)](https://www.youtube.com/watch?v=DvF3AsTglUU "What is difference between Semaphore and Mutex")
+
+
+My two cents on Mutex and Semaphore in C#
+https://www.infoworld.com/article/3088099/my-two-cents-on-mutex-and-semaphore-in-c.html
+
+
+Thread Pooling in C# with example
+https://www.onlinebuff.com/article_thread-pooling-in-cnet-with-real-time-example-onlinebuff_59.html

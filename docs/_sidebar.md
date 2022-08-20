@@ -73,3 +73,4 @@
   - [Blockchain 101](drafts/blockchain/)
   - [Blazor 101](drafts/blazor/)
   - [Object oriented programming 101](drafts/object-oriented-programming-notes/)
+  - [Cryptography 101](drafts/cryptography/)
