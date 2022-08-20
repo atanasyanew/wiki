@@ -11,6 +11,9 @@ TOC
     - [Other software](#other-software)
   - [Calibration](#calibration)
     - [Bed leveling](#bed-leveling)
+  - [WIP](#wip)
+    - [Octoprint plugins](#octoprint-plugins)
+    - [Troubleshooting](#troubleshooting)
 
 ## Overview
 
@@ -81,3 +84,52 @@ Collection of files used to get job done.
 | 2   | ``CHEP_bed_level_test.gcode``    | [thing:3235018](https://www.thingiverse.com/thing:3235018)       | Draws squares to check the calibration |
 | 3   | ``bedlevel_cross.stl``           | [thing:4275680](https://www.thingiverse.com/thing:4275680/files) | You can start this print and adjust the bed when the print is running, check whatever the filament stick on the bed |
 | 4   | ``xyzCalibration_cube.stl``      | [thing:1278865](https://www.thingiverse.com/thing:1278865/files) | XYZ Calibration cube, check the quality of the print for all the directions |
+
+## WIP
+
+### Octoprint plugins
+
+https://plugins.octoprint.org/plugins/filemanager/
+https://github.com/imrahil/OctoPrint-PrintHistory
+https://github.com/jneilliii/OctoPrint-UltimakerFormatPackage
+
+
+### Troubleshooting
+
+[(HOW) I fixed the Ugly Layers on my 3D Printer](https://www.youtube.com/watch?v=a3oQy6v3MrA&t=236s)
+
+[How to STOP Elephant's Foot on your 3D Prints](https://www.youtube.com/watch?v=zlgR3rHg4p8)
+
+[3D Printing Troubleshooting Guide: Elephants Foot](https://www.youtube.com/watch?v=41vyNWlE-J4)
+
+[3D Printer Trouble Shooting Guide](https://www.youtube.com/watch?v=rj0wpGE3uzc&list=PLfzz3f4EgsrRoSc7CIS6mZv88O2H8s44b)
+
+[Elephant Foot Compensation](https://www.youtube.com/watch?v=U7X0DdZPses)
+
+[https://howto3dprint.net/4-easy-ways-to-fix-3d-printing-elephant-foot/](https://howto3dprint.net/4-easy-ways-to-fix-3d-printing-elephant-foot/)
+
+[Upgrade Creality Ender 3 with Capricorn PTFE Tubing](https://www.youtube.com/watch?v=8VmlZniuSa4)
+A good video describes how to change the ptfe tube correct
+
+[Fix Your Creality Ender 3 with New PTFE Tubing](https://www.youtube.com/watch?v=DB5b4673GJ0)
+
+[Creality Hot End maintenance, Nozzle change, Coupling and Bowden Tube (PTFE) upgrade to Capricorn](https://www.youtube.com/watch?v=rFUUWNlJv94)
+
+https://www.youtube.com/watch?v=kG_YKeJDaX8
+
+[Creality Ender 3, CR-10 - Hotend PTFE Fix](https://www.youtube.com/watch?v=Fb4XMbZ0iA4)
+
+
+[The Biggest Pain In 3D Printing - Hotend Clogs & Jams](https://www.youtube.com/watch?v=fzWj6adWc-Y)
+
+Dual Drive Gear Extruder Upgrade + E Steps on Creality Ender 3
+https://www.youtube.com/watch?v=QnrH2Sk7y40
+
+
+[Ender 3 (Pro) Z Offset: How to Adjust It](https://all3dp.com/2/ender-3-pro-z-offset/?fbclid=IwAR1q4cy2527BHctpUqSJxOGZOB8mHnSU5PPx-4NrCwRA-8M_ORPQk6vWuvA)
+
+
+[Adjusting the X-Axis on the Ender 3](http://www.mystoopidstuff.com/blog/adjusting-the-x-axis-on-the-ender-3)
+
+
+[How to setup OctoPrint! (+ best plugin recommendations)](https://www.youtube.com/watch?v=HBd0olxI-No)
