@@ -1,0 +1,46 @@
+{
+    "cSpell.words": [
+        "Ambilight",
+        "Creality",
+        "DHCPCD",
+        "Enviro",
+        "GRRL",
+        "Gameboy",
+        "Kallax",
+        "PGID",
+        "PUID",
+        "Prismatik",
+        "Pxxxxx",
+        "Raspbian",
+        "SSID",
+        "Skadis",
+        "Tmega",
+        "Uploader",
+        "Wemos",
+        "atanasyanew",
+        "ayanev's",
+        "coverpage",
+        "diyhue",
+        "dockergroup",
+        "dockeruser",
+        "dperson",
+        "duckdns",
+        "gcgarner",
+        "githubusercontent",
+        "metricsmetricsmetricsmetrics",
+        "pivpn",
+        "primatic",
+        "raspberrypi",
+        "repo's",
+        "systemctl",
+        "usermod",
+        "wifi",
+        "wlan"
+    ],
+    
+    // VS Code theme
+    "workbench.colorTheme": "Visual Studio Dark",
+    
+    // Preview Theme
+    "markdown-preview-enhanced.previewTheme": "github-light.css",
+}
