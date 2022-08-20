@@ -66,6 +66,7 @@
   - [Sinusoidal modes in linear circuits](drafts/sinusoidal-modes-in-linear-circuits/)
   - [Low-Code Development Tools](drafts/low-code-development-tools/)
   - [Home assistant](drafts/home-assistant/)
+  - [Web apps auth](drafts/2022-07-web-apps-auth/)
 - [**Drafts, WIP - 101 topics**](drafts/)
   - [C# 101](drafts/csharp-notes/)
   - [Docker 101](drafts/docker/)
