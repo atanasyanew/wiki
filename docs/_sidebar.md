@@ -11,6 +11,7 @@
   - [Data structures **(WIP)**](data-structures-and-algorithms/data-structures/)
 
 - [DIY](do-it-yourself/)
+  - [Home Media Server (Fully Automated)](do-it-yourself/2023-01-home-media-server/)
   - [ESPHome 101](do-it-yourself/2022-01-esphome/)
     - [ESPhome nodes](do-it-yourself/2022-01-esphome/esphome-nodes.md)
   - [Server rack 10"](do-it-yourself/2021-08-server-rack-10inch/)
