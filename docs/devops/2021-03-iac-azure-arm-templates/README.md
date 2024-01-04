@@ -36,7 +36,7 @@ Overview of the relationship between:
 
 ## Install the Azure CLI
 
-There few different CLI's that could be installed, such as ``Azure``, ``AzureRm`` and  ``Az``.
+There few different CLI's that could be installed, such as ``Azure``, ``AzureRm`` and  ``Az``.  
 The ``Az`` is the latest and cross platform, so once you are familiar with could be use anywhere, anyway rest will be deprecated.
 Installation guidelines 👉 [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
 
@@ -76,19 +76,16 @@ az group create -n rg-exploring -l westeurope
 Good practices:
 - **Naming conventions** are must
   Check out for inspiration - [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
-- **Do not** cheat using **one resource for more than one environment**
-  Why? Imagine we are using a ``blob storage`` with many containers having a ``dev`` and ``prod`` environments.
-  There are workarounds to save from the total cost using only one storage account.
-  But this can cause a lot of troubles, such as so called "noisy neighbor".
-  What if a bug in dev cause continuously uploading and hit the capacity of the storage. Which means we are going to be billed a lot or maybe production downtime.
+- **Do not** cheat using **one resource for more than one environment**  
+  Why? Imagine we are using a ``blob storage`` with many containers having a ``dev`` and ``prod`` environments.  
+  There are workarounds to save from the total cost using only one storage account.  
+  But this can cause a lot of troubles, such as so called "noisy neighbor".  
+  What if a bug in dev cause continuously uploading and hit the capacity of the storage. Which means we are going to be billed a lot or maybe production downtime. 
 - **Parametrize** what make sense
   
-The best way for me was to start exploring what already made by the rest of world.
-
-A good starting point for exploring is [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/).
-
-Different approach is to manually create resources and then export them as template, but do not make my mistake creating a bunch of resources, because you will end with 1000 lines of JSON and will be get totally confused.
-
+The best way for me was to start exploring what already made by the rest of world.  
+A good starting point for exploring is [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/).  
+Different approach is to manually create resources and then export them as template, but do not make my mistake creating a bunch of resources, because you will end with 1000 lines of JSON and will be get totally confused.  
 Check the links in [References](#references) section, there are some damn good tutorials about creating an ARM templates.
 
 ### Sample ARM templates
