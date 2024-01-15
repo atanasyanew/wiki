@@ -34,7 +34,7 @@ Not a gamer, but I've always wanted to make one of these arcade machines.
 | IEC 60320 C14 Power socket | 1   | 2       | Screw Mount one, with a button | 
 | Logitech desktop speakers  | 1   | 10      | Bought used ones               |
 |                            |     |         |                   |
-| 3D prrinted models         |     |         | [thing:6435623](https://www.thingiverse.com/thing:6435623), []()|
+| 3D printed models          |     |         | [thing:6435623](https://www.thingiverse.com/thing:6435623), [printables](https://www.printables.com/model/723322-arcade-bartop)|
 
 ## Assembly
 
