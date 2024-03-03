@@ -80,3 +80,4 @@
   - [Cryptography 101](drafts/cryptography/)
   - [React 101](drafts/react/)
   - [Flutter 101](drafts/flutter/)
+  - [Red Hat Enterprise Linux 101](drafts/rhel/)
